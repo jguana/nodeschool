@@ -43,11 +43,13 @@
 var fs = require('fs')
 var path = require('path')
 
-module.exports = function(dir, ext, fs.readdir(err, files) {
-    if (err) return console.error(err)
-    files.forEach(function (file) {
-        if (path.extname(file) === ext) {
-            console.log(file)
-        }
+module.exports = function (dir, ext, callback) {
+    fs.readdir(dir, function (err, files) {
+        if (err) return callback(err)
+        list = list.filter(function (file) {
+            return path.extname(file) === '.' + ext
+        })
+        
+        callback(null, list)
     })
 }
