@@ -7,11 +7,11 @@
 - learnyoumongo
 `npm install -g learnyoumongo`
 
-- learnyoureact
-`npm install -g learnyoureact`
-
-
 ## done
 - javascripting
 - learnyounode
 - learnyouhtml (wip)
+
+## broken
+- learnyoureact
+`npm install -g learnyoureact`
