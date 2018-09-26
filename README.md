@@ -9,3 +9,9 @@
 
 - learnyoureact
 `npm install -g learnyoureact`
+
+
+## done
+- javascripting
+- learnyounode
+- learnyouhtml (wip)
